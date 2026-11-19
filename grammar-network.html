@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>基础日语语法知识网络 V3.0</title>
+<title>基础日语语法知识网络 V3.1</title>
 <style>
 *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Microsoft YaHei","Noto Sans CJK SC",sans-serif;background:#f4f7fb;color:#243247}header{background:white;padding:18px 26px;border-bottom:1px solid #e3e8f0}h1{margin:0;font-size:23px;color:#2459a6}header p{margin:7px 0 0;color:#718096;font-size:13px}.toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:14px 24px;background:white;border-bottom:1px solid #e3e8f0}button,select{padding:10px 14px;border-radius:8px;border:1px solid #d6dfeb;background:white;font-size:14px;cursor:pointer}button.active{background:#2459a6;border-color:#2459a6;color:white}.layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;height:calc(100vh - 155px);min-height:500px}.network-container{position:relative;overflow:hidden;background:radial-gradient(circle,#dce5f0 1px,transparent 1px);background-size:24px 24px}#network{display:block;width:100%;height:100%;touch-action:none;cursor:grab}#network:active{cursor:grabbing}.link{stroke:#aabbd0;stroke-width:2;fill:none}.link.related{stroke:#e0a15c;stroke-dasharray:6 5}.node{cursor:pointer}.node circle{stroke:white;stroke-width:3;filter:drop-shadow(0 3px 5px rgba(0,0,0,.12))}.node.selected circle{stroke:#f59e0b;stroke-width:5}.node.focus circle{fill:#f9dca8}.node.sense circle{fill:#bce8d0}.node.form circle{fill:#9fc7ff}.node.function circle{fill:#e6d4ff}.node text{text-anchor:middle;dominant-baseline:middle;font-size:13px;font-weight:600;pointer-events:none;fill:#26384f}.panel{background:white;border-left:1px solid #e3e8f0;padding:22px;overflow-y:auto}.panel h2{margin:0 0 14px;font-size:20px;color:#2459a6}.panel h3{font-size:15px;margin:22px 0 8px;color:#41536b}.panel p{font-size:14px;line-height:1.8}.example{background:#f4f8ff;border-left:4px solid #5a91d8;padding:12px;border-radius:5px;margin-top:10px}.jp{font-size:16px;line-height:1.8}.cn{font-size:14px;color:#64748b;margin-top:5px}.badge{display:inline-block;padding:4px 9px;margin:3px;background:#edf3fc;color:#315f9e;border-radius:6px;font-size:12px}.notice{background:#fff7e8;color:#8a651e;padding:10px;border-radius:6px;font-size:12px;line-height:1.7}.empty{color:#718096;line-height:1.9}.hint{position:absolute;bottom:16px;left:16px;background:rgba(255,255,255,.94);padding:9px 12px;border-radius:7px;color:#66788f;font-size:12px;pointer-events:none}@media(max-width:800px){.layout{display:block;height:auto}.network-container{height:520px}.panel{min-height:280px;border-left:0;border-top:1px solid #e3e8f0}}
 </style>
 </head>
 <body>
-<header><h1>基础日语语法知识网络</h1><p>V3.0.2 · 布局修复验证版 · 语法形式 × 语法功能</p></header>
+<header><h1>基础日语语法知识网络</h1><p>V3.1 · 语法知识 × 教材句型 × 学习轨迹</p></header>
 <div class="toolbar"><button id="formBtn" class="active">语法形式网络</button><button id="functionBtn">语法功能网络</button><select id="focusSelect" aria-label="选择中心语法"></select><button id="resetBtn">重置视图</button></div>
 <div class="layout"><div class="network-container"><svg id="network" aria-label="交互式语法知识网络"><g id="viewport"><g id="links"></g><g id="nodes"></g></g></svg><div class="hint">点击节点查看详情 · 拖动节点调整位置 · 滚轮缩放</div></div><aside class="panel" id="detailPanel"><h2>语法知识详情</h2><p class="empty">正在加载语法数据……</p></aside></div>
 <script>
 "use strict";
 const DATA_URL = "./grammar-network-v3.json";
-console.info("Grammar Network V3.0.2 loaded");
+console.info("Grammar Network V3.1 loaded");
 const SVG_NS = "http://www.w3.org/2000/svg";
 const svg = document.getElementById("network");
 const viewport = document.getElementById("viewport");
@@ -49,7 +49,7 @@ function buildGraph(){
   resetView();
   renderGraph();
   showWelcome();
-  console.info("V3.0.2 layout check", {nodes:graphNodes.length, view, positions:graphNodes.map(n=>[n.id,n.x,n.y])});
+  console.info("V3.1 layout check", {nodes:graphNodes.length, view, positions:graphNodes.map(n=>[n.id,n.x,n.y])});
 }
 function addNode(id,label,type,radius){if(!graphNodes.some(n=>n.id===id))graphNodes.push({id,label,type,radius,x:0,y:0});}
 function addLink(source,target,type="normal"){if(!graphLinks.some(l=>l.source===source&&l.target===target&&l.type===type))graphLinks.push({source,target,type});}
@@ -149,16 +149,24 @@ function selectNode(id){selectedNodeId=id;renderGraph();const s=senseById(id),f=
 function showSense(s){
   const f=formById(s.grammar_form_id),occ=data.grammar_occurrences.filter(o=>o.sense_id===s.id);
   const functions=data.function_links.filter(l=>l.sense_id===s.id).map(l=>functionById(l.function_id)).filter(Boolean);
+  const linked=data.pattern_links.filter(l=>l.sense_id===s.id);
+  const patterns=linked.map(l=>data.patterns.find(p=>p.id===l.pattern_id)).filter(Boolean);
   const rels=data.grammar_relations.filter(r=>r.source_id===s.id||r.target_id===s.id);
-  let html=`<h2>${esc(f?.form)}：${esc(s.meaning)}</h2><h3>语法类别</h3><p>${esc(f?.category)}</p><h3>接续方式</h3><p>${esc(s.connection)}</p><h3>语法功能</h3><p>${functions.map(fn=>`<span class="badge">${esc(fn.name)}</span>`).join("")||"尚未分类"}</p><h3>教材课次与例句</h3>`;
-  if(!occ.length)html+="<p>暂无教材记录。</p>";
-  for(const o of occ){html+=`<div class="example"><strong>第${esc(o.lesson)}课</strong><span class="badge">页码：${o.page==null?"待核实":esc(o.page)}</span><div class="jp">${esc(o.example)}</div><div class="cn">${esc(o.translation)}</div><div class="notice">${o.source_type==="supplementary"?"教学补充例句，非已核实教材原句":"来源类型："+esc(o.source_type)}<br>${o.verified?"已核实":"教材出处尚未核实"}</div></div>`;}
-  if(rels.length){html+="<h3>相关语法</h3>";for(const r of rels){const other=senseById(r.source_id===s.id?r.target_id:r.source_id),of=other?formById(other.grammar_form_id):null;html+=`<p><strong>${esc(of?.form)}：${esc(other?.meaning)}</strong><br>${esc(r.description)}<br><span class="badge">${r.type==="contrast"?"对比关系":"相关关系"}</span><span class="badge">${r.status==="proposed"?"待审核":esc(r.status)}</span></p>`;}}
+  let html=`<h2>${esc(f?.form)}：${esc(s.meaning)}</h2><p><span class="badge">第${esc(s.first_lesson??'—')}课首次收录</span><span class="badge">${esc(s.status??'REVIEW')}</span></p><h3>语法功能</h3><p>${functions.map(fn=>`<span class="badge">${esc(fn.name)}</span>`).join('')||'尚未分类'}</p><h3>教材句型（${patterns.length}）</h3>`;
+  if(!patterns.length)html+='<p class="empty">尚无关联句型。</p>';
+  for(const p of patterns)html+=`<div class="example"><strong>第${esc(p.lesson)}课</strong><div class="jp">${esc(p.pattern)}</div><div class="cn">关联关系：待复核</div></div>`;
+  html+=`<h3>教材学习轨迹（${occ.length}）</h3>`;
+  if(!occ.length)html+='<p class="empty">暂无出现记录。</p>';
+  for(const o of [...occ].sort((a,b)=>a.lesson-b.lesson)){
+    html+=`<div class="example"><strong>第${esc(o.lesson)}课</strong><span class="badge">${esc(o.occurrence_type||'出现类型待核实')}</span><span class="badge">页码：${o.page==null?'待核实':esc(o.page)}</span><div class="cn">${esc(o.location||'位置待核实')}</div>${o.example?`<div class="jp">${esc(o.example)}</div><div class="cn">${esc(o.translation)}</div>`:''}<div class="notice">${o.source_type==='supplementary'?'教学整理示例，并非教材逐字引文':'来源：'+esc(o.source_type)}；${esc(o.status||'REVIEW')}。</div></div>`;
+  }
+  if(rels.length){html+='<h3>相关语法</h3>';for(const r of rels){const other=senseById(r.source_id===s.id?r.target_id:r.source_id);html+=`<p>${esc(formById(other?.grammar_form_id)?.form)}：${esc(other?.meaning)} · ${esc(r.description)}</p>`;}}
+  html+='<p class="notice">当前数据为第1—3课初步结构化版本，教材原句、出现位置和教学类型尚未逐项核实。</p>';
   detailPanel.innerHTML=html;
 }
-function showForm(f){const senses=data.grammar_senses.filter(s=>s.grammar_form_id===f.id);detailPanel.innerHTML=`<h2>语法形式：${esc(f.form)}</h2><h3>语法类别</h3><p>${esc(f.category)}</p><h3>已收录义项</h3>${senses.map(s=>`<p><span class="badge">${esc(s.meaning)}</span></p>`).join("")}<p class="empty">点击绿色义项节点，查看例句与课次。</p>`;}
-function showFunction(f){const items=data.function_links.filter(l=>l.function_id===f.id).map(l=>senseById(l.sense_id)).filter(Boolean);detailPanel.innerHTML=`<h2>${esc(f.name)}</h2><h3>相关语法</h3>${items.map(s=>`<p><span class="badge">${esc(formById(s.grammar_form_id)?.form)}</span>${esc(s.meaning)}</p>`).join("")}<p class="empty">点击义项查看详细内容。</p>`;}
-function showWelcome(){detailPanel.innerHTML=`<h2>语法知识详情</h2><p class="empty">当前视图：<strong>${currentMode==="form"?"语法形式网络":"语法功能网络"}</strong><br>点击网络中的节点查看详细内容。</p><h3>节点说明</h3><p><span class="badge">黄色：当前中心</span><span class="badge">蓝色：语法形式</span><span class="badge">绿色：语法义项</span><span class="badge">紫色：语法功能</span></p><p class="empty">虚线表示相关语法之间的关系候选。</p>`;}
+function showForm(f){const senses=data.grammar_senses.filter(s=>s.grammar_form_id===f.id);detailPanel.innerHTML=`<h2>语法形式：${esc(f.form)}</h2><h3>语法类别</h3><p>${esc(f.category)}</p><h3>已收录义项</h3>${senses.map(s=>`<p><span class="badge">${esc(s.meaning)}</span></p>`).join("")}<p class="empty">点击绿色义项节点，查看关联教材句型和学习轨迹。</p>`;}
+function showFunction(f){const items=data.function_links.filter(l=>l.function_id===f.id).map(l=>senseById(l.sense_id)).filter(Boolean);detailPanel.innerHTML=`<h2>${esc(f.name)}</h2><h3>相关语法</h3>${items.map(s=>`<p><span class="badge">${esc(formById(s.grammar_form_id)?.form)}</span>${esc(s.meaning)}</p>`).join("")}<p class="empty">点击义项查看教材句型及学习轨迹。</p>`;}
+function showWelcome(){detailPanel.innerHTML=`<h2>语法知识详情</h2><p class="empty">当前视图：<strong>${currentMode==="form"?"语法形式网络":"语法功能网络"}</strong><br>点击网络中的节点查看教材句型、学习轨迹和例句。</p><h3>节点说明</h3><p><span class="badge">黄色：当前中心</span><span class="badge">蓝色：语法形式</span><span class="badge">绿色：语法义项</span><span class="badge">紫色：语法功能</span></p><p class="empty">本版收录第1—3课的初步结构化数据；未核实的关系不绘制连线。</p>`;}
 svg.addEventListener("pointerdown",e=>{if(e.button!==0)return;pointerState={type:"pan",startX:e.clientX,startY:e.clientY,originX:view.x,originY:view.y,moved:false};svg.setPointerCapture(e.pointerId);});
 svg.addEventListener("pointermove",e=>{
   if(!pointerState)return;

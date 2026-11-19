@@ -1,260 +1,1266 @@
 {
-  "version": "3.0",
-  "description": "基础日语双重语法知识网络",
+  "version": "3.1",
+  "source": "基础日语1-3课(2).pdf",
+  "status": "REVIEW",
+  "notes": "句型/义项初步结构化；示例句为整理示例，非教材逐字引文；未经逐项核对",
   "grammar_forms": [
     {
-      "id": "gf_ni",
+      "id": "gf_001",
+      "form": "は",
+      "category": "语法形式／表达"
+    },
+    {
+      "id": "gf_002",
+      "form": "です",
+      "category": "语法形式／表达"
+    },
+    {
+      "id": "gf_003",
+      "form": "か",
+      "category": "语法形式／表达"
+    },
+    {
+      "id": "gf_004",
+      "form": "ではありません",
+      "category": "语法形式／表达"
+    },
+    {
+      "id": "gf_005",
+      "form": "か～か",
+      "category": "语法形式／表达"
+    },
+    {
+      "id": "gf_006",
+      "form": "も",
+      "category": "语法形式／表达"
+    },
+    {
+      "id": "gf_007",
+      "form": "も～も",
+      "category": "语法形式／表达"
+    },
+    {
+      "id": "gf_008",
+      "form": "の",
+      "category": "语法形式／表达"
+    },
+    {
+      "id": "gf_009",
+      "form": "これ・それ・あれ",
+      "category": "语法形式／表达"
+    },
+    {
+      "id": "gf_010",
+      "form": "この・その・あの",
+      "category": "语法形式／表达"
+    },
+    {
+      "id": "gf_011",
+      "form": "どれ・どの",
+      "category": "语法形式／表达"
+    },
+    {
+      "id": "gf_012",
       "form": "に",
-      "category": "助词"
+      "category": "语法形式／表达"
     },
     {
-      "id": "gf_de",
-      "form": "で",
-      "category": "助词"
+      "id": "gf_013",
+      "form": "あります",
+      "category": "语法形式／表达"
     },
     {
-      "id": "gf_e",
-      "form": "へ",
-      "category": "助词"
+      "id": "gf_014",
+      "form": "います",
+      "category": "语法形式／表达"
+    },
+    {
+      "id": "gf_015",
+      "form": "が",
+      "category": "语法形式／表达"
+    },
+    {
+      "id": "gf_016",
+      "form": "ありません",
+      "category": "语法形式／表达"
+    },
+    {
+      "id": "gf_017",
+      "form": "いません",
+      "category": "语法形式／表达"
+    },
+    {
+      "id": "gf_018",
+      "form": "や",
+      "category": "语法形式／表达"
+    },
+    {
+      "id": "gf_019",
+      "form": "位置名词",
+      "category": "语法形式／表达"
     }
   ],
   "grammar_senses": [
     {
-      "id": "gs_ni_location",
-      "grammar_form_id": "gf_ni",
-      "meaning": "存在地点",
-      "connection": "地点＋に＋存在主体＋が＋あります／います",
-      "legacy_id": "g22"
+      "id": "gs_001",
+      "grammar_form_id": "gf_001",
+      "meaning": "主题提示",
+      "connection": "详见教材句型",
+      "first_lesson": 1,
+      "status": "REVIEW"
     },
     {
-      "id": "gs_ni_time",
-      "grammar_form_id": "gf_ni",
-      "meaning": "具体时间点",
-      "connection": "时间名词＋に＋动词",
-      "legacy_id": "g33"
+      "id": "gs_002",
+      "grammar_form_id": "gf_002",
+      "meaning": "肯定判断（礼貌）",
+      "connection": "详见教材句型",
+      "first_lesson": 1,
+      "status": "REVIEW"
     },
     {
-      "id": "gs_ni_target",
-      "grammar_form_id": "gf_ni",
-      "meaning": "动作或行为的对象",
-      "connection": "对象＋に＋动词",
-      "legacy_id": "g34"
+      "id": "gs_003",
+      "grammar_form_id": "gf_003",
+      "meaning": "句末疑问",
+      "connection": "详见教材句型",
+      "first_lesson": 1,
+      "status": "REVIEW"
     },
     {
-      "id": "gs_ni_comparison",
-      "grammar_form_id": "gf_ni",
-      "meaning": "比较的基准（距离远近）",
-      "connection": "名词＋に＋近い／遠い",
-      "legacy_id": "g65"
+      "id": "gs_004",
+      "grammar_form_id": "gf_004",
+      "meaning": "礼貌否定判断",
+      "connection": "详见教材句型",
+      "first_lesson": 1,
+      "status": "REVIEW"
     },
     {
-      "id": "gs_ni_frequency",
-      "grammar_form_id": "gf_ni",
-      "meaning": "频率的时间范围",
-      "connection": "时间单位＋に＋次数",
-      "legacy_id": "g67"
+      "id": "gs_005",
+      "grammar_form_id": "gf_005",
+      "meaning": "选择疑问",
+      "connection": "详见教材句型",
+      "first_lesson": 1,
+      "status": "REVIEW"
     },
     {
-      "id": "gs_de_action_location",
-      "grammar_form_id": "gf_de",
-      "meaning": "动作发生场所",
-      "connection": "地点＋で＋动作动词",
-      "legacy_id": "g35"
+      "id": "gs_006",
+      "grammar_form_id": "gf_006",
+      "meaning": "同类追加",
+      "connection": "详见教材句型",
+      "first_lesson": 1,
+      "status": "REVIEW"
     },
     {
-      "id": "gs_de_means",
-      "grammar_form_id": "gf_de",
-      "meaning": "工具、手段、方式",
-      "connection": "名词＋で＋动词",
-      "legacy_id": "g36"
+      "id": "gs_007",
+      "grammar_form_id": "gf_007",
+      "meaning": "并列列举",
+      "connection": "详见教材句型",
+      "first_lesson": 1,
+      "status": "REVIEW"
     },
     {
-      "id": "gs_de_group",
-      "grammar_form_id": "gf_de",
-      "meaning": "动作主体的数量",
-      "connection": "人数＋で＋动词",
-      "legacy_id": "g37"
+      "id": "gs_008",
+      "grammar_form_id": "gf_008",
+      "meaning": "所属、领属",
+      "connection": "详见教材句型",
+      "first_lesson": 1,
+      "status": "REVIEW"
     },
     {
-      "id": "gs_e_direction",
-      "grammar_form_id": "gf_e",
-      "meaning": "移动方向",
-      "connection": "地点＋へ＋移动动词",
-      "legacy_id": "g32"
+      "id": "gs_009",
+      "grammar_form_id": "gf_009",
+      "meaning": "事物指示",
+      "connection": "详见教材句型",
+      "first_lesson": 2,
+      "status": "REVIEW"
+    },
+    {
+      "id": "gs_010",
+      "grammar_form_id": "gf_010",
+      "meaning": "连体指示",
+      "connection": "详见教材句型",
+      "first_lesson": 2,
+      "status": "REVIEW"
+    },
+    {
+      "id": "gs_011",
+      "grammar_form_id": "gf_011",
+      "meaning": "选择性疑问指示",
+      "connection": "详见教材句型",
+      "first_lesson": 2,
+      "status": "REVIEW"
+    },
+    {
+      "id": "gs_012",
+      "grammar_form_id": "gf_008",
+      "meaning": "属性、内容限定",
+      "connection": "详见教材句型",
+      "first_lesson": 2,
+      "status": "REVIEW"
+    },
+    {
+      "id": "gs_013",
+      "grammar_form_id": "gf_012",
+      "meaning": "存在位置",
+      "connection": "详见教材句型",
+      "first_lesson": 3,
+      "status": "REVIEW"
+    },
+    {
+      "id": "gs_014",
+      "grammar_form_id": "gf_013",
+      "meaning": "无生命事物存在",
+      "connection": "详见教材句型",
+      "first_lesson": 3,
+      "status": "REVIEW"
+    },
+    {
+      "id": "gs_015",
+      "grammar_form_id": "gf_014",
+      "meaning": "有生命主体存在",
+      "connection": "详见教材句型",
+      "first_lesson": 3,
+      "status": "REVIEW"
+    },
+    {
+      "id": "gs_016",
+      "grammar_form_id": "gf_015",
+      "meaning": "存在句主语标记",
+      "connection": "详见教材句型",
+      "first_lesson": 3,
+      "status": "REVIEW"
+    },
+    {
+      "id": "gs_017",
+      "grammar_form_id": "gf_016",
+      "meaning": "无生命事物不存在",
+      "connection": "详见教材句型",
+      "first_lesson": 3,
+      "status": "REVIEW"
+    },
+    {
+      "id": "gs_018",
+      "grammar_form_id": "gf_017",
+      "meaning": "有生命主体不存在",
+      "connection": "详见教材句型",
+      "first_lesson": 3,
+      "status": "REVIEW"
+    },
+    {
+      "id": "gs_019",
+      "grammar_form_id": "gf_018",
+      "meaning": "不完全列举",
+      "connection": "详见教材句型",
+      "first_lesson": 3,
+      "status": "REVIEW"
+    },
+    {
+      "id": "gs_020",
+      "grammar_form_id": "gf_019",
+      "meaning": "相对位置",
+      "connection": "详见教材句型",
+      "first_lesson": 3,
+      "status": "REVIEW"
     }
   ],
   "grammar_functions": [
     {
-      "id": "func_location",
-      "name": "场所与空间表达"
+      "id": "fn_001",
+      "name": "判断与陈述"
     },
     {
-      "id": "func_time",
-      "name": "时间表达"
+      "id": "fn_002",
+      "name": "疑问表达"
     },
     {
-      "id": "func_target",
-      "name": "动作对象"
+      "id": "fn_003",
+      "name": "判断与否定"
     },
     {
-      "id": "func_comparison",
-      "name": "比较表达"
+      "id": "fn_004",
+      "name": "并列与追加"
     },
     {
-      "id": "func_means",
-      "name": "手段与方式"
+      "id": "fn_005",
+      "name": "名词修饰"
     },
     {
-      "id": "func_group",
-      "name": "共同动作与人数"
+      "id": "fn_006",
+      "name": "指示表达"
+    },
+    {
+      "id": "fn_007",
+      "name": "存在与场所"
     }
   ],
   "function_links": [
     {
-      "function_id": "func_location",
-      "sense_id": "gs_ni_location"
+      "function_id": "fn_001",
+      "sense_id": "gs_001"
     },
     {
-      "function_id": "func_location",
-      "sense_id": "gs_de_action_location"
+      "function_id": "fn_001",
+      "sense_id": "gs_002"
     },
     {
-      "function_id": "func_location",
-      "sense_id": "gs_e_direction"
+      "function_id": "fn_002",
+      "sense_id": "gs_003"
     },
     {
-      "function_id": "func_time",
-      "sense_id": "gs_ni_time"
+      "function_id": "fn_003",
+      "sense_id": "gs_004"
     },
     {
-      "function_id": "func_time",
-      "sense_id": "gs_ni_frequency"
+      "function_id": "fn_002",
+      "sense_id": "gs_005"
     },
     {
-      "function_id": "func_target",
-      "sense_id": "gs_ni_target"
+      "function_id": "fn_004",
+      "sense_id": "gs_006"
     },
     {
-      "function_id": "func_comparison",
-      "sense_id": "gs_ni_comparison"
+      "function_id": "fn_004",
+      "sense_id": "gs_007"
     },
     {
-      "function_id": "func_means",
-      "sense_id": "gs_de_means"
+      "function_id": "fn_005",
+      "sense_id": "gs_008"
     },
     {
-      "function_id": "func_group",
-      "sense_id": "gs_de_group"
+      "function_id": "fn_006",
+      "sense_id": "gs_009"
+    },
+    {
+      "function_id": "fn_006",
+      "sense_id": "gs_010"
+    },
+    {
+      "function_id": "fn_002",
+      "sense_id": "gs_011"
+    },
+    {
+      "function_id": "fn_005",
+      "sense_id": "gs_012"
+    },
+    {
+      "function_id": "fn_007",
+      "sense_id": "gs_013"
+    },
+    {
+      "function_id": "fn_007",
+      "sense_id": "gs_014"
+    },
+    {
+      "function_id": "fn_007",
+      "sense_id": "gs_015"
+    },
+    {
+      "function_id": "fn_007",
+      "sense_id": "gs_016"
+    },
+    {
+      "function_id": "fn_007",
+      "sense_id": "gs_017"
+    },
+    {
+      "function_id": "fn_007",
+      "sense_id": "gs_018"
+    },
+    {
+      "function_id": "fn_004",
+      "sense_id": "gs_019"
+    },
+    {
+      "function_id": "fn_007",
+      "sense_id": "gs_020"
     }
   ],
   "grammar_occurrences": [
     {
-      "id": "go_ni_location_l3",
-      "sense_id": "gs_ni_location",
+      "id": "oc_001",
+      "sense_id": "gs_001",
+      "lesson": 1,
+      "page": 61,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "私は学生です。",
+      "translation": "我是学生。",
+      "source_type": "supplementary",
+      "verified": false,
+      "status": "REVIEW"
+    },
+    {
+      "id": "oc_002",
+      "sense_id": "gs_002",
+      "lesson": 1,
+      "page": 61,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "私は学生です。",
+      "translation": "我是学生。",
+      "source_type": "supplementary",
+      "verified": false,
+      "status": "REVIEW"
+    },
+    {
+      "id": "oc_003",
+      "sense_id": "gs_003",
+      "lesson": 1,
+      "page": 61,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "あなたは学生ですか。",
+      "translation": "你是学生吗？",
+      "source_type": "supplementary",
+      "verified": false,
+      "status": "REVIEW"
+    },
+    {
+      "id": "oc_004",
+      "sense_id": "gs_004",
+      "lesson": 1,
+      "page": 61,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "私は先生ではありません。",
+      "translation": "我不是老师。",
+      "source_type": "supplementary",
+      "verified": false,
+      "status": "REVIEW"
+    },
+    {
+      "id": "oc_005",
+      "sense_id": "gs_005",
+      "lesson": 1,
+      "page": 62,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "学生ですか、先生ですか。",
+      "translation": "是学生还是老师？",
+      "source_type": "supplementary",
+      "verified": false,
+      "status": "REVIEW"
+    },
+    {
+      "id": "oc_006",
+      "sense_id": "gs_006",
+      "lesson": 1,
+      "page": 62,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "私も学生です。",
+      "translation": "我也是学生。",
+      "source_type": "supplementary",
+      "verified": false,
+      "status": "REVIEW"
+    },
+    {
+      "id": "oc_007",
+      "sense_id": "gs_007",
+      "lesson": 1,
+      "page": 62,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "父も母も先生です。",
+      "translation": "父亲和母亲都是老师。",
+      "source_type": "supplementary",
+      "verified": false,
+      "status": "REVIEW"
+    },
+    {
+      "id": "oc_008",
+      "sense_id": "gs_008",
+      "lesson": 1,
+      "page": 63,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "私の先生です。",
+      "translation": "是我的老师。",
+      "source_type": "supplementary",
+      "verified": false,
+      "status": "REVIEW"
+    },
+    {
+      "id": "oc_009",
+      "sense_id": "gs_009",
+      "lesson": 2,
+      "page": 76,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "これは本です。",
+      "translation": "这是书。",
+      "source_type": "supplementary",
+      "verified": false,
+      "status": "REVIEW"
+    },
+    {
+      "id": "oc_010",
+      "sense_id": "gs_010",
+      "lesson": 2,
+      "page": 77,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "この本は日本語の本です。",
+      "translation": "这本书是日语书。",
+      "source_type": "supplementary",
+      "verified": false,
+      "status": "REVIEW"
+    },
+    {
+      "id": "oc_011",
+      "sense_id": "gs_008",
+      "lesson": 2,
+      "page": 78,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "これは私の本です。",
+      "translation": "这是我的书。",
+      "source_type": "supplementary",
+      "verified": false,
+      "status": "REVIEW"
+    },
+    {
+      "id": "oc_012",
+      "sense_id": "gs_011",
+      "lesson": 2,
+      "page": 79,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "どの本ですか。",
+      "translation": "是哪本书？",
+      "source_type": "supplementary",
+      "verified": false,
+      "status": "REVIEW"
+    },
+    {
+      "id": "oc_013",
+      "sense_id": "gs_012",
+      "lesson": 2,
+      "page": 79,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "日本語の本です。",
+      "translation": "是日语书。",
+      "source_type": "supplementary",
+      "verified": false,
+      "status": "REVIEW"
+    },
+    {
+      "id": "oc_014",
+      "sense_id": "gs_001",
+      "lesson": 2,
+      "page": 80,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "これは辞書です。",
+      "translation": "这是词典。",
+      "source_type": "supplementary",
+      "verified": false,
+      "status": "REVIEW"
+    },
+    {
+      "id": "oc_015",
+      "sense_id": "gs_013",
       "lesson": 3,
-      "page": null,
+      "page": 95,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "本は机の上にあります。",
+      "translation": "书在桌子上。",
+      "source_type": "supplementary",
+      "verified": false,
+      "status": "REVIEW"
+    },
+    {
+      "id": "oc_016",
+      "sense_id": "gs_014",
+      "lesson": 3,
+      "page": 95,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "本は机の上にあります。",
+      "translation": "书在桌子上。",
+      "source_type": "supplementary",
+      "verified": false,
+      "status": "REVIEW"
+    },
+    {
+      "id": "oc_017",
+      "sense_id": "gs_015",
+      "lesson": 3,
+      "page": 95,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "先生は教室にいます。",
+      "translation": "老师在教室里。",
+      "source_type": "supplementary",
+      "verified": false,
+      "status": "REVIEW"
+    },
+    {
+      "id": "oc_018",
+      "sense_id": "gs_016",
+      "lesson": 3,
+      "page": 96,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
       "example": "机の上に本があります。",
       "translation": "桌子上有书。",
       "source_type": "supplementary",
-      "verified": false
+      "verified": false,
+      "status": "REVIEW"
     },
     {
-      "id": "go_ni_time_l4",
-      "sense_id": "gs_ni_time",
-      "lesson": 4,
-      "page": null,
-      "example": "七時に起きます。",
-      "translation": "七点起床。",
+      "id": "oc_019",
+      "sense_id": "gs_013",
+      "lesson": 3,
+      "page": 96,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "本は机の上にあります。",
+      "translation": "书在桌子上。",
       "source_type": "supplementary",
-      "verified": false
+      "verified": false,
+      "status": "REVIEW"
     },
     {
-      "id": "go_ni_target_l4",
-      "sense_id": "gs_ni_target",
-      "lesson": 4,
-      "page": null,
-      "example": "先生に会います。",
-      "translation": "见老师。",
+      "id": "oc_020",
+      "sense_id": "gs_016",
+      "lesson": 3,
+      "page": 96,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "机の上に本があります。",
+      "translation": "桌子上有书。",
       "source_type": "supplementary",
-      "verified": false
+      "verified": false,
+      "status": "REVIEW"
     },
     {
-      "id": "go_ni_comparison_l6",
-      "sense_id": "gs_ni_comparison",
-      "lesson": 6,
-      "page": null,
-      "example": "学校は駅に近いです。",
-      "translation": "学校离车站近。",
+      "id": "oc_021",
+      "sense_id": "gs_003",
+      "lesson": 3,
+      "page": 97,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "本は机の上にありますか。",
+      "translation": "书在桌子上吗？",
       "source_type": "supplementary",
-      "verified": false
+      "verified": false,
+      "status": "REVIEW"
     },
     {
-      "id": "go_ni_frequency_l6",
-      "sense_id": "gs_ni_frequency",
-      "lesson": 6,
-      "page": null,
-      "example": "一週間に三回行きます。",
-      "translation": "一周去三次。",
+      "id": "oc_022",
+      "sense_id": "gs_017",
+      "lesson": 3,
+      "page": 97,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "本は机の上にありません。",
+      "translation": "书不在桌子上。",
       "source_type": "supplementary",
-      "verified": false
+      "verified": false,
+      "status": "REVIEW"
     },
     {
-      "id": "go_de_action_location_l4",
-      "sense_id": "gs_de_action_location",
-      "lesson": 4,
-      "page": 115,
-      "example": "図書館で勉強します。",
-      "translation": "在图书馆学习。",
+      "id": "oc_023",
+      "sense_id": "gs_018",
+      "lesson": 3,
+      "page": 97,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "先生は教室にいません。",
+      "translation": "老师不在教室里。",
       "source_type": "supplementary",
-      "verified": false
+      "verified": false,
+      "status": "REVIEW"
     },
     {
-      "id": "go_de_means_l4",
-      "sense_id": "gs_de_means",
-      "lesson": 4,
-      "page": 115,
-      "example": "バスで行きます。",
-      "translation": "乘公交车去。",
+      "id": "oc_024",
+      "sense_id": "gs_019",
+      "lesson": 3,
+      "page": 98,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "机の上に本やノートがあります。",
+      "translation": "桌子上有书、笔记本等。",
       "source_type": "supplementary",
-      "verified": false
+      "verified": false,
+      "status": "REVIEW"
     },
     {
-      "id": "go_de_group_l4",
-      "sense_id": "gs_de_group",
-      "lesson": 4,
-      "page": 115,
-      "example": "三人で行きます。",
-      "translation": "三个人一起去。",
+      "id": "oc_025",
+      "sense_id": "gs_020",
+      "lesson": 3,
+      "page": 99,
+      "location": "句型／注解（候选）",
+      "occurrence_type": "正式教学（待核实）",
+      "example": "机の下にかばんがあります。",
+      "translation": "桌子下面有包。",
       "source_type": "supplementary",
-      "verified": false
-    },
-    {
-      "id": "go_e_direction_l4",
-      "sense_id": "gs_e_direction",
-      "lesson": 4,
-      "page": 114,
-      "example": "学校へ行きます。",
-      "translation": "去学校。",
-      "source_type": "supplementary",
-      "verified": false
+      "verified": false,
+      "status": "REVIEW"
     }
   ],
-  "grammar_relations": [
+  "grammar_relations": [],
+  "patterns": [
     {
-      "id": "rel_ni_de_location",
-      "source_id": "gs_ni_location",
-      "target_id": "gs_de_action_location",
-      "type": "contrast",
-      "description": "に表示存在地点，で表示动作发生场所。",
-      "status": "proposed"
+      "id": "pt_001",
+      "lesson": 1,
+      "pattern": "N1 は N2 です"
     },
     {
-      "id": "rel_ni_e_direction",
-      "source_id": "gs_ni_location",
-      "target_id": "gs_e_direction",
-      "type": "related",
-      "description": "两者均涉及空间关系，但に表示存在地点，へ表示移动方向。",
-      "status": "proposed"
+      "id": "pt_002",
+      "lesson": 1,
+      "pattern": "N1 は N2 ですか"
+    },
+    {
+      "id": "pt_003",
+      "lesson": 1,
+      "pattern": "N1 は N2 ではありません"
+    },
+    {
+      "id": "pt_004",
+      "lesson": 1,
+      "pattern": "N1 は N2 ですか、N3 ですか"
+    },
+    {
+      "id": "pt_005",
+      "lesson": 1,
+      "pattern": "N1 も N2 です"
+    },
+    {
+      "id": "pt_006",
+      "lesson": 1,
+      "pattern": "N1 も N2 も N3 です"
+    },
+    {
+      "id": "pt_007",
+      "lesson": 1,
+      "pattern": "N1 の N2"
+    },
+    {
+      "id": "pt_008",
+      "lesson": 2,
+      "pattern": "これ／それ／あれ は N です"
+    },
+    {
+      "id": "pt_009",
+      "lesson": 2,
+      "pattern": "この／その／あの N は N です"
+    },
+    {
+      "id": "pt_010",
+      "lesson": 2,
+      "pattern": "N1 の N2"
+    },
+    {
+      "id": "pt_011",
+      "lesson": 2,
+      "pattern": "どれ／どの N"
+    },
+    {
+      "id": "pt_012",
+      "lesson": 2,
+      "pattern": "N1 は N2 です"
+    },
+    {
+      "id": "pt_013",
+      "lesson": 3,
+      "pattern": "N1（物） は N2（場所） に あります"
+    },
+    {
+      "id": "pt_014",
+      "lesson": 3,
+      "pattern": "N1（人・動物） は N2（場所） に います"
+    },
+    {
+      "id": "pt_015",
+      "lesson": 3,
+      "pattern": "N1（場所） に N2（物） が あります"
+    },
+    {
+      "id": "pt_016",
+      "lesson": 3,
+      "pattern": "N1（場所） に N2（人） が います"
+    },
+    {
+      "id": "pt_017",
+      "lesson": 3,
+      "pattern": "N1 は N2 に ありますか"
+    },
+    {
+      "id": "pt_018",
+      "lesson": 3,
+      "pattern": "N1 は N2 に ありません"
+    },
+    {
+      "id": "pt_019",
+      "lesson": 3,
+      "pattern": "N1 は N2 に いません"
+    },
+    {
+      "id": "pt_020",
+      "lesson": 3,
+      "pattern": "N1 や N2"
+    },
+    {
+      "id": "pt_021",
+      "lesson": 3,
+      "pattern": "場所詞（上・下・中・外・前・後ろ・隣）"
+    }
+  ],
+  "pattern_links": [
+    {
+      "id": "lk_001",
+      "pattern_id": "pt_001",
+      "sense_id": "gs_001",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_002",
+      "pattern_id": "pt_001",
+      "sense_id": "gs_002",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_003",
+      "pattern_id": "pt_002",
+      "sense_id": "gs_003",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_004",
+      "pattern_id": "pt_003",
+      "sense_id": "gs_004",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_005",
+      "pattern_id": "pt_004",
+      "sense_id": "gs_005",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_006",
+      "pattern_id": "pt_005",
+      "sense_id": "gs_006",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_007",
+      "pattern_id": "pt_006",
+      "sense_id": "gs_007",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_008",
+      "pattern_id": "pt_007",
+      "sense_id": "gs_008",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_009",
+      "pattern_id": "pt_008",
+      "sense_id": "gs_009",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_010",
+      "pattern_id": "pt_009",
+      "sense_id": "gs_010",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_011",
+      "pattern_id": "pt_010",
+      "sense_id": "gs_008",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_012",
+      "pattern_id": "pt_011",
+      "sense_id": "gs_011",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_013",
+      "pattern_id": "pt_010",
+      "sense_id": "gs_012",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_014",
+      "pattern_id": "pt_012",
+      "sense_id": "gs_001",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_015",
+      "pattern_id": "pt_013",
+      "sense_id": "gs_013",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_016",
+      "pattern_id": "pt_013",
+      "sense_id": "gs_014",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_017",
+      "pattern_id": "pt_014",
+      "sense_id": "gs_015",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_018",
+      "pattern_id": "pt_015",
+      "sense_id": "gs_016",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_019",
+      "pattern_id": "pt_016",
+      "sense_id": "gs_013",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_020",
+      "pattern_id": "pt_016",
+      "sense_id": "gs_016",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_021",
+      "pattern_id": "pt_017",
+      "sense_id": "gs_003",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_022",
+      "pattern_id": "pt_018",
+      "sense_id": "gs_017",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_023",
+      "pattern_id": "pt_019",
+      "sense_id": "gs_018",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_024",
+      "pattern_id": "pt_020",
+      "sense_id": "gs_019",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    },
+    {
+      "id": "lk_025",
+      "pattern_id": "pt_021",
+      "sense_id": "gs_020",
+      "relation": "包含语法义项",
+      "status": "REVIEW"
+    }
+  ],
+  "examples": [
+    {
+      "id": "ex_001",
+      "sense_id": "gs_001",
+      "lesson": 1,
+      "page": 61,
+      "japanese": "私は学生です。",
+      "chinese": "我是学生。",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_002",
+      "sense_id": "gs_002",
+      "lesson": 1,
+      "page": 61,
+      "japanese": "私は学生です。",
+      "chinese": "我是学生。",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_003",
+      "sense_id": "gs_003",
+      "lesson": 1,
+      "page": 61,
+      "japanese": "あなたは学生ですか。",
+      "chinese": "你是学生吗？",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_004",
+      "sense_id": "gs_004",
+      "lesson": 1,
+      "page": 61,
+      "japanese": "私は先生ではありません。",
+      "chinese": "我不是老师。",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_005",
+      "sense_id": "gs_005",
+      "lesson": 1,
+      "page": 62,
+      "japanese": "学生ですか、先生ですか。",
+      "chinese": "是学生还是老师？",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_006",
+      "sense_id": "gs_006",
+      "lesson": 1,
+      "page": 62,
+      "japanese": "私も学生です。",
+      "chinese": "我也是学生。",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_007",
+      "sense_id": "gs_007",
+      "lesson": 1,
+      "page": 62,
+      "japanese": "父も母も先生です。",
+      "chinese": "父亲和母亲都是老师。",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_008",
+      "sense_id": "gs_008",
+      "lesson": 1,
+      "page": 63,
+      "japanese": "私の先生です。",
+      "chinese": "是我的老师。",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_009",
+      "sense_id": "gs_009",
+      "lesson": 2,
+      "page": 76,
+      "japanese": "これは本です。",
+      "chinese": "这是书。",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_010",
+      "sense_id": "gs_010",
+      "lesson": 2,
+      "page": 77,
+      "japanese": "この本は日本語の本です。",
+      "chinese": "这本书是日语书。",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_011",
+      "sense_id": "gs_008",
+      "lesson": 2,
+      "page": 78,
+      "japanese": "これは私の本です。",
+      "chinese": "这是我的书。",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_012",
+      "sense_id": "gs_011",
+      "lesson": 2,
+      "page": 79,
+      "japanese": "どの本ですか。",
+      "chinese": "是哪本书？",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_013",
+      "sense_id": "gs_012",
+      "lesson": 2,
+      "page": 79,
+      "japanese": "日本語の本です。",
+      "chinese": "是日语书。",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_014",
+      "sense_id": "gs_001",
+      "lesson": 2,
+      "page": 80,
+      "japanese": "これは辞書です。",
+      "chinese": "这是词典。",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_015",
+      "sense_id": "gs_013",
+      "lesson": 3,
+      "page": 95,
+      "japanese": "本は机の上にあります。",
+      "chinese": "书在桌子上。",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_016",
+      "sense_id": "gs_014",
+      "lesson": 3,
+      "page": 95,
+      "japanese": "本は机の上にあります。",
+      "chinese": "书在桌子上。",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_017",
+      "sense_id": "gs_015",
+      "lesson": 3,
+      "page": 95,
+      "japanese": "先生は教室にいます。",
+      "chinese": "老师在教室里。",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_018",
+      "sense_id": "gs_016",
+      "lesson": 3,
+      "page": 96,
+      "japanese": "机の上に本があります。",
+      "chinese": "桌子上有书。",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_019",
+      "sense_id": "gs_013",
+      "lesson": 3,
+      "page": 96,
+      "japanese": "教室に先生がいます。",
+      "chinese": "教室里有老师。",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_020",
+      "sense_id": "gs_016",
+      "lesson": 3,
+      "page": 96,
+      "japanese": "教室に先生がいます。",
+      "chinese": "教室里有老师。",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_021",
+      "sense_id": "gs_003",
+      "lesson": 3,
+      "page": 97,
+      "japanese": "本は机の上にありますか。",
+      "chinese": "书在桌子上吗？",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_022",
+      "sense_id": "gs_017",
+      "lesson": 3,
+      "page": 97,
+      "japanese": "本は机の上にありません。",
+      "chinese": "书不在桌子上。",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_023",
+      "sense_id": "gs_018",
+      "lesson": 3,
+      "page": 97,
+      "japanese": "先生は教室にいません。",
+      "chinese": "老师不在教室里。",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_024",
+      "sense_id": "gs_019",
+      "lesson": 3,
+      "page": 98,
+      "japanese": "机の上に本やノートがあります。",
+      "chinese": "桌子上有书、笔记本等。",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
+    },
+    {
+      "id": "ex_025",
+      "sense_id": "gs_020",
+      "lesson": 3,
+      "page": 99,
+      "japanese": "机の下にかばんがあります。",
+      "chinese": "桌子下面有包。",
+      "kind": "教学示例（非教材逐字引文）",
+      "source": "AI整理示例",
+      "status": "REVIEW"
     }
   ]
 }
