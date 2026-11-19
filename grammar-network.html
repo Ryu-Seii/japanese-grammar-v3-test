@@ -9,12 +9,13 @@
 </style>
 </head>
 <body>
-<header><h1>基础日语语法知识网络</h1><p>V3.0 · 双重网络试验版 · 语法形式 × 语法功能</p></header>
+<header><h1>基础日语语法知识网络</h1><p>V3.0.2 · 布局修复验证版 · 语法形式 × 语法功能</p></header>
 <div class="toolbar"><button id="formBtn" class="active">语法形式网络</button><button id="functionBtn">语法功能网络</button><select id="focusSelect" aria-label="选择中心语法"></select><button id="resetBtn">重置视图</button></div>
 <div class="layout"><div class="network-container"><svg id="network" aria-label="交互式语法知识网络"><g id="viewport"><g id="links"></g><g id="nodes"></g></g></svg><div class="hint">点击节点查看详情 · 拖动节点调整位置 · 滚轮缩放</div></div><aside class="panel" id="detailPanel"><h2>语法知识详情</h2><p class="empty">正在加载语法数据……</p></aside></div>
 <script>
 "use strict";
 const DATA_URL = "./grammar-network-v3.json";
+console.info("Grammar Network V3.0.2 loaded");
 const SVG_NS = "http://www.w3.org/2000/svg";
 const svg = document.getElementById("network");
 const viewport = document.getElementById("viewport");
@@ -48,6 +49,7 @@ function buildGraph(){
   resetView();
   renderGraph();
   showWelcome();
+  console.info("V3.0.2 layout check", {nodes:graphNodes.length, view, positions:graphNodes.map(n=>[n.id,n.x,n.y])});
 }
 function addNode(id,label,type,radius){if(!graphNodes.some(n=>n.id===id))graphNodes.push({id,label,type,radius,x:0,y:0});}
 function addLink(source,target,type="normal"){if(!graphLinks.some(l=>l.source===source&&l.target===target&&l.type===type))graphLinks.push({source,target,type});}
