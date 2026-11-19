@@ -1,0 +1,260 @@
+{
+  "version": "3.0",
+  "description": "基础日语双重语法知识网络",
+  "grammar_forms": [
+    {
+      "id": "gf_ni",
+      "form": "に",
+      "category": "助词"
+    },
+    {
+      "id": "gf_de",
+      "form": "で",
+      "category": "助词"
+    },
+    {
+      "id": "gf_e",
+      "form": "へ",
+      "category": "助词"
+    }
+  ],
+  "grammar_senses": [
+    {
+      "id": "gs_ni_location",
+      "grammar_form_id": "gf_ni",
+      "meaning": "存在地点",
+      "connection": "地点＋に＋存在主体＋が＋あります／います",
+      "legacy_id": "g22"
+    },
+    {
+      "id": "gs_ni_time",
+      "grammar_form_id": "gf_ni",
+      "meaning": "具体时间点",
+      "connection": "时间名词＋に＋动词",
+      "legacy_id": "g33"
+    },
+    {
+      "id": "gs_ni_target",
+      "grammar_form_id": "gf_ni",
+      "meaning": "动作或行为的对象",
+      "connection": "对象＋に＋动词",
+      "legacy_id": "g34"
+    },
+    {
+      "id": "gs_ni_comparison",
+      "grammar_form_id": "gf_ni",
+      "meaning": "比较的基准（距离远近）",
+      "connection": "名词＋に＋近い／遠い",
+      "legacy_id": "g65"
+    },
+    {
+      "id": "gs_ni_frequency",
+      "grammar_form_id": "gf_ni",
+      "meaning": "频率的时间范围",
+      "connection": "时间单位＋に＋次数",
+      "legacy_id": "g67"
+    },
+    {
+      "id": "gs_de_action_location",
+      "grammar_form_id": "gf_de",
+      "meaning": "动作发生场所",
+      "connection": "地点＋で＋动作动词",
+      "legacy_id": "g35"
+    },
+    {
+      "id": "gs_de_means",
+      "grammar_form_id": "gf_de",
+      "meaning": "工具、手段、方式",
+      "connection": "名词＋で＋动词",
+      "legacy_id": "g36"
+    },
+    {
+      "id": "gs_de_group",
+      "grammar_form_id": "gf_de",
+      "meaning": "动作主体的数量",
+      "connection": "人数＋で＋动词",
+      "legacy_id": "g37"
+    },
+    {
+      "id": "gs_e_direction",
+      "grammar_form_id": "gf_e",
+      "meaning": "移动方向",
+      "connection": "地点＋へ＋移动动词",
+      "legacy_id": "g32"
+    }
+  ],
+  "grammar_functions": [
+    {
+      "id": "func_location",
+      "name": "场所与空间表达"
+    },
+    {
+      "id": "func_time",
+      "name": "时间表达"
+    },
+    {
+      "id": "func_target",
+      "name": "动作对象"
+    },
+    {
+      "id": "func_comparison",
+      "name": "比较表达"
+    },
+    {
+      "id": "func_means",
+      "name": "手段与方式"
+    },
+    {
+      "id": "func_group",
+      "name": "共同动作与人数"
+    }
+  ],
+  "function_links": [
+    {
+      "function_id": "func_location",
+      "sense_id": "gs_ni_location"
+    },
+    {
+      "function_id": "func_location",
+      "sense_id": "gs_de_action_location"
+    },
+    {
+      "function_id": "func_location",
+      "sense_id": "gs_e_direction"
+    },
+    {
+      "function_id": "func_time",
+      "sense_id": "gs_ni_time"
+    },
+    {
+      "function_id": "func_time",
+      "sense_id": "gs_ni_frequency"
+    },
+    {
+      "function_id": "func_target",
+      "sense_id": "gs_ni_target"
+    },
+    {
+      "function_id": "func_comparison",
+      "sense_id": "gs_ni_comparison"
+    },
+    {
+      "function_id": "func_means",
+      "sense_id": "gs_de_means"
+    },
+    {
+      "function_id": "func_group",
+      "sense_id": "gs_de_group"
+    }
+  ],
+  "grammar_occurrences": [
+    {
+      "id": "go_ni_location_l3",
+      "sense_id": "gs_ni_location",
+      "lesson": 3,
+      "page": null,
+      "example": "机の上に本があります。",
+      "translation": "桌子上有书。",
+      "source_type": "supplementary",
+      "verified": false
+    },
+    {
+      "id": "go_ni_time_l4",
+      "sense_id": "gs_ni_time",
+      "lesson": 4,
+      "page": null,
+      "example": "七時に起きます。",
+      "translation": "七点起床。",
+      "source_type": "supplementary",
+      "verified": false
+    },
+    {
+      "id": "go_ni_target_l4",
+      "sense_id": "gs_ni_target",
+      "lesson": 4,
+      "page": null,
+      "example": "先生に会います。",
+      "translation": "见老师。",
+      "source_type": "supplementary",
+      "verified": false
+    },
+    {
+      "id": "go_ni_comparison_l6",
+      "sense_id": "gs_ni_comparison",
+      "lesson": 6,
+      "page": null,
+      "example": "学校は駅に近いです。",
+      "translation": "学校离车站近。",
+      "source_type": "supplementary",
+      "verified": false
+    },
+    {
+      "id": "go_ni_frequency_l6",
+      "sense_id": "gs_ni_frequency",
+      "lesson": 6,
+      "page": null,
+      "example": "一週間に三回行きます。",
+      "translation": "一周去三次。",
+      "source_type": "supplementary",
+      "verified": false
+    },
+    {
+      "id": "go_de_action_location_l4",
+      "sense_id": "gs_de_action_location",
+      "lesson": 4,
+      "page": 115,
+      "example": "図書館で勉強します。",
+      "translation": "在图书馆学习。",
+      "source_type": "supplementary",
+      "verified": false
+    },
+    {
+      "id": "go_de_means_l4",
+      "sense_id": "gs_de_means",
+      "lesson": 4,
+      "page": 115,
+      "example": "バスで行きます。",
+      "translation": "乘公交车去。",
+      "source_type": "supplementary",
+      "verified": false
+    },
+    {
+      "id": "go_de_group_l4",
+      "sense_id": "gs_de_group",
+      "lesson": 4,
+      "page": 115,
+      "example": "三人で行きます。",
+      "translation": "三个人一起去。",
+      "source_type": "supplementary",
+      "verified": false
+    },
+    {
+      "id": "go_e_direction_l4",
+      "sense_id": "gs_e_direction",
+      "lesson": 4,
+      "page": 114,
+      "example": "学校へ行きます。",
+      "translation": "去学校。",
+      "source_type": "supplementary",
+      "verified": false
+    }
+  ],
+  "grammar_relations": [
+    {
+      "id": "rel_ni_de_location",
+      "source_id": "gs_ni_location",
+      "target_id": "gs_de_action_location",
+      "type": "contrast",
+      "description": "に表示存在地点，で表示动作发生场所。",
+      "status": "proposed"
+    },
+    {
+      "id": "rel_ni_e_direction",
+      "source_id": "gs_ni_location",
+      "target_id": "gs_e_direction",
+      "type": "related",
+      "description": "两者均涉及空间关系，但に表示存在地点，へ表示移动方向。",
+      "status": "proposed"
+    }
+  ]
+}
